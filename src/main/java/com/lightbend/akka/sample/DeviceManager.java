@@ -30,8 +30,8 @@ public class DeviceManager extends AbstractActor {
     public static final class DeviceRegistered {
     }
 
-    final Map<String, ActorRef> groupIdToActor = new HashMap<>();
-    final Map<ActorRef, String> actorToGroupId = new HashMap<>();
+    private final Map<String, ActorRef> groupIdToActor = new HashMap<>();
+    private final Map<ActorRef, String> actorToGroupId = new HashMap<>();
 
     @Override
     public void preStart() {

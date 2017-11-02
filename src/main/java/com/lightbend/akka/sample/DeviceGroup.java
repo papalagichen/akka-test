@@ -42,8 +42,8 @@ public class DeviceGroup extends AbstractActor {
         }
     }
 
-    final Map<String, ActorRef> deviceIdToActor = new HashMap<>();
-    final Map<ActorRef, String> actorToDeviceId = new HashMap<>();
+    private final Map<String, ActorRef> deviceIdToActor = new HashMap<>();
+    private final Map<ActorRef, String> actorToDeviceId = new HashMap<>();
 
     @Override
     public void preStart() {
